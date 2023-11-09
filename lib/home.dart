@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     dataPass = jsonDecode(widget.data);
+    print(dataPass);
     super.initState();
   }
   
