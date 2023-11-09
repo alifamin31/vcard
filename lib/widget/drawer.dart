@@ -50,7 +50,6 @@ class _DrawerPageState extends State<DrawerPage> {
                   height: 4,
                 ),
                 Align(
-                  // alignment: Alignment.topLeft,
                   child: Text(
                     '${dataPass['username']}',
                     textAlign: TextAlign.center,

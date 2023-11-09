@@ -49,13 +49,6 @@ class SplashService {
           } else {
             String data = jsonEncode(login);
             await storage.write(key: 'data', value: data);
-            print(login['id']);
-            print(login['email']);
-            print(login['username']);
-            print(login['fullname']);
-            print(login['employment']);
-            print(login['phone_number']);
-            print(data);
             Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage(data: data,)));
           }
         }

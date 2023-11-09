@@ -122,13 +122,6 @@ class _LoginPageState extends State<LoginPage> {
         } else {
           await storage.write(key: 'rememberme', value: _rememberMe.toString());
         }
-        print(login['id']);
-        print(login['email']);
-        print(login['username']);
-        print(login['fullname']);
-        print(login['employment']);
-        print(login['phone_number']);
-        print(data);
         Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage(data: data,)));
       }
     }
@@ -297,8 +290,6 @@ class _LoginPageState extends State<LoginPage> {
                                               splashColor: const Color(0xFF1A237E),
                                               height: 40,
                                               onPressed: () {
-                                                // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
-                                                // _getEmail();
                                                 _signin();
                                               },
                                               color: Colors.indigo[900],
